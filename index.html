@@ -8,6 +8,7 @@
     <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
 </head>
 <body>
     
@@ -93,7 +94,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center my-5">
-                <h1 class="display-3">diam sapien</h1>
+                
+                <h1 class="display-3">
+                    <i class="fa fa-cogs text-primary" aria-hidden="true"></i>
+                    diam sapien
+                </h1>
                 <p>Praesent maximus, ante quis mattis aliquet, libero augue placerat diam, quis suscipit odio urna at felis.</p>
             </div>
         </div>
@@ -252,6 +257,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h1 class="display-4">
+                        <i class="fa fa-video fa-video-camera text-primary" aria-hidden="true"></i>
                         consectetur
                     </h1>
                     <p class="lead">
@@ -322,8 +328,91 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-5">
+                <h1 class="display-4">
+                    <i class="fa fa-paper-plane text-primary" aria-hidden="true" ></i>
+                    Nulla facilisi
+                </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            
+                            <label for="inputNome">Seu nome</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+
+                        </div>
+
+                        <div class="form-group col-sm-6">
+                            <label for="inputSobrenome">Seu sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" placeholder="Sobrenome">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <label for="inputEnd">Seu endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Endereço completo">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-6">
+                            <label for="inputCidade">Sua cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="inputEst">Seu estado</label>
+                            <select name="" id="inputEst" class="form-control">
+                                <option selected>Escolha...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group col-sm-2">
+                            <label for="inputCep">Seu CEP</label>
+                            <input type="text" id="inputCep" class="form-control" placeholder="CEP">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-sm-12">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox">Desejo receber novidade por e-mail
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right" data-trigger="focus" title="Donec tincidunt" data-content="Sed ornare metus ut ante convallis placerat.">Ajuda</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        $(function (){
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 </html>
